@@ -3,10 +3,7 @@ import Reveal from '../components/Reveal'
 import './About.css'
 
 const team = [
-  { name: 'Sardor Karimov', role: 'CEO & Founder', icon: 'bx bx-user' },
-  { name: 'Nilufar Tosheva', role: 'Head of Education', icon: 'bx bx-book-open' },
-  { name: 'Bobur Raximov', role: 'Lead Developer', icon: 'bx bx-code-alt' },
-  { name: 'Zulfiya Nazarova', role: 'Design Director', icon: 'bx bx-brush' },
+  { name: 'Timurbek Ataullayev', role: 'CEO & Founder', icon: 'bx bx-user' },
 ]
 
 const values = [
