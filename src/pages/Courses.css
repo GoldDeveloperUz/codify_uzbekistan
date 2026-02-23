@@ -1,0 +1,192 @@
+.courses-grid-section { background: var(--charcoal-2); }
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.course-card:hover {
+  border-color: rgba(255, 107, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.course-badge {
+  position: absolute;
+  top: 1.2rem; right: 1.2rem;
+  background: var(--grad);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.course-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 107, 0, 0.15);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--orange); font-size: 1.4rem;
+}
+
+.course-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; }
+.course-desc { font-size: 0.85rem; color: var(--text-muted); flex: 1; }
+
+.course-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.course-meta span { display: flex; align-items: center; gap: 4px; }
+
+.course-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.course-price {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+/* CERT */
+.cert-section { background: var(--charcoal); }
+
+.cert-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.trust-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  transition: all 0.3s;
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+
+.trust-badge:hover { border-color: rgba(255, 107, 0, 0.28); }
+
+.cert-mockup {
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  border: 1px solid rgba(255, 107, 0, 0.22);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  position: relative;
+}
+
+.cert-inner {
+  border: 2px solid rgba(255, 107, 0, 0.35);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+.cert-brand { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--orange); letter-spacing: 3px; }
+.cert-subtitle { font-size: 0.65rem; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; margin-top: 2px; }
+.cert-divider { width: 60px; height: 2px; background: var(--grad); margin: 1.5rem auto; }
+.cert-presented { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem; }
+.cert-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; }
+.cert-course { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+.cert-seal {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--grad); margin: 1.5rem auto 0;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.5rem;
+  box-shadow: 0 0 28px rgba(255, 107, 0, 0.5);
+}
+.cert-date { font-size: 0.68rem; color: var(--text-muted); margin-top: 1.2rem; }
+
+/* COINS */
+.coins-section {
+  background: var(--charcoal-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.coins-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 107, 0, 0.06), transparent 70%);
+}
+
+.coins-header { text-align: center; margin-bottom: 3rem; position: relative; }
+
+.coins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+}
+
+.coin-card {
+  background: rgba(255, 255, 255, 0.028);
+  border: 1px solid rgba(255, 107, 0, 0.13);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.coin-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 107, 0, 0.45);
+  box-shadow: 0 20px 50px rgba(255, 107, 0, 0.13);
+}
+
+.coin-icon {
+  width: 68px; height: 68px; border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B00, #FFB347);
+  margin: 0 auto 1.2rem;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.6rem;
+  box-shadow: 0 0 28px rgba(255, 107, 0, 0.45), 0 0 56px rgba(255, 107, 0, 0.18);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.coin-card h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
+.coin-card p { font-size: 0.82rem; color: var(--text-muted); }
+
+@media (max-width: 900px) {
+  .cert-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .trust-badges { grid-template-columns: 1fr; }
+}
